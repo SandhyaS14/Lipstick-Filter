@@ -1,0 +1,37 @@
+body {
+    margin: 50px;
+    text-align: center;
+
+    animation-name: transition1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+hr {
+    background-color: aqua;
+    height: 5px;
+}
+
+canvas {
+    animation-name: transition;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transition {
+    0% {box-shadow: 1px 1px 30px green}
+    25% {box-shadow: 1px 1px 30px yellow}
+    50% {box-shadow: 1px 1px 30px deepskyblue}
+    75% {box-shadow: 1px 1px 30px red}
+    100% {box-shadow: 1px 1px 30px green}
+}
+
+h3 {
+    font-size: 25px !important;
+}
+
+@keyframes transition1 {
+    0% {background-color: purple}
+    50% {background-color: orange}
+    100% {background-color: deeppink}
+}
