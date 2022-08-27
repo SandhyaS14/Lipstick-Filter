@@ -7,9 +7,10 @@ function preload() {
 
 function setup() {
     canvas = createCanvas(300, 300);
-    canvas.position(550,200);
+    canvas.center();
 
     video = createCapture(VIDEO);
+    video.size(300, 300)
     video.hide();
 
     posenet = ml5.poseNet(video, modelloaded);
@@ -23,7 +24,7 @@ function modelloaded() {
 function draw() {
     image(video, 0,0,300,300);
 
-    image(nose, noseX-20, noseY-20, 30, 30);
+    image(nose, noseX-20, noseY+5, 35, 35);
 }
 
 function snap() {

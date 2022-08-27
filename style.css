@@ -1,5 +1,4 @@
 body {
-    margin: 50px;
     text-align: center;
 
     animation-name: transition1;
@@ -13,6 +12,7 @@ hr {
 }
 
 canvas {
+    margin-top: 5px;
     animation-name: transition;
     animation-duration: 4s;
     animation-iteration-count: infinite;
